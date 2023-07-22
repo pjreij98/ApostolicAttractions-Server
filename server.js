@@ -9,7 +9,7 @@ require('dotenv').config()
 
 var port = process.env.PORT || 8080
 
-const uri = "mongodb+srv://pjreij98:ct23krWn2OoUccoZ@apostolicattractions.yszzhr6.mongodb.net/ApostolicAttractions?retryWrites=true&w=majority";
+const uri = process.env.URI;
 
 //use if path to account key json isn't saved in environment variables: avoid for production 
 var serviceAccount = require("./apostolic-attractions-firebase-adminsdk-menbd-94b079d8ea.json")
